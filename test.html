@@ -12,11 +12,16 @@
     the greatest demonstration for freedom in the history of our nation.</p>
 
 <script>
+    var d = new Date();
+    var n = d.getTime();
+    var zerotime=n;
+    var timing=[];
     $(document).keypress(function( event ) {
         if ( event.which == 32 ) {
-            var d = new Date();
-            var n = d.getTime();
-            document.getElementById("demo").innerHTML = n;
+            d = new Date();
+            n = d.getTime();
+            timing.push(n-zerotime);
+            document.getElementById("demo").innerHTML = timing;
         }
 
     });
