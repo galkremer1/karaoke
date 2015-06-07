@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>keypress demo</title>
+    <script src="jquery-2.1.4.min.js"></script>
+</head>
+<body>
+
+<p id="demo">I am happy to join<br>
+    with you today in what will go down in history as<br>
+    the greatest demonstration for freedom in the history of our nation.</p>
+
+<script>
+    $(document).keypress(function( event ) {
+        if ( event.which == 32 ) {
+            var d = new Date();
+            var n = d.getTime();
+            document.getElementById("demo").innerHTML = n;
+        }
+
+    });
+
+
+</script>
+
+</body>
+</html>
