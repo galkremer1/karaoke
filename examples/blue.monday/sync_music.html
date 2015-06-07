@@ -1,14 +1,32 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <script>
+        function lyricsDisplay() {
+
+            if (timing[Math.round($("#jquery_jplayer_1").data("jPlayer").status.currentTime)] !== undefined)
+            {
+                document.getElementById('lyrics_display').innerHTML = timing[Math.round($("#jquery_jplayer_1").data("jPlayer").status.currentTime)];;
+            }
+            var t = setTimeout(function(){lyricsDisplay()},500);
+
+        }
+
+    </script>
 <meta charset="utf-8" />
 <!-- Website Design By: www.happyworm.com -->
-<title>Demo : jPlayer as an audio player</title>
+<title>Music sync</title>
 
-	<p id="demo">I am happy to join<br>
-		with you today in what will go down in history as<br>
-		the greatest demonstration for freedom in the history of our nation.</p>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<p id="demo"></p>
+    Enter your lyrics here: <input type="textbox" id="lyricsinput">
+    <button onclick="submitLyrics()">Submit</button>
+    <p id="lyrics"></p>
+    <p id="display"></p>
+    <div id="lyrics_display">Lyrics should be displayed here</div>
+
+
+
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 <link href="../../dist/skin/blue.monday/css/jplayer.blue.monday.min.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="../../lib/jquery.min.js"></script>
 <script type="text/javascript" src="../../dist/jplayer/jquery.jplayer.min.js"></script>
@@ -19,13 +37,12 @@ $(document).ready(function(){
 	$("#jquery_jplayer_1").jPlayer({
 		ready: function (event) {
 			$(this).jPlayer("setMedia", {
-				title: "Bubble",
-				m4a: "http://jplayer.org/audio/m4a/Miaow-07-Bubble.m4a",
-				oga: "http://jplayer.org/audio/ogg/Miaow-07-Bubble.ogg"
+				title: "What is love",
+				mp3: "http://www.sk89q.com/playground/ricekaraoke/karaoke/what_is_love.mp3",
 			});
 		},
 		swfPath: "../../dist/jplayer",
-		supplied: "m4a, oga",
+		supplied: "mp3",
 		wmode: "window",
 		useStateClassSkin: true,
 		autoBlur: false,
@@ -38,7 +55,9 @@ $(document).ready(function(){
 //]]>
 </script>
 </head>
-<body>
+
+<body onload="lyricsDisplay()">
+
 <div id="jquery_jplayer_1" class="jp-jplayer"></div>
 <div id="jp_container_1" class="jp-audio" role="application" aria-label="media player">
 	<div class="jp-type-single">
@@ -76,23 +95,31 @@ $(document).ready(function(){
 		</div>
 	</div>
 </div>
+
+
 </body>
 
 
 <script>
-	var d = new Date();
-	var n = d.getTime();
-	var zerotime=n;
-	var timing=[];
+
+	timing= {};
+    word_index=0;
 	$(document).keypress(function( event ) {
-		if ( event.which == 32 ) {
-			d = new Date();
-			n = d.getTime();
-			timing.push(n-zerotime);
-			document.getElementById("demo").innerHTML = timing;
+        jPlayer_c_time=Math.round($("#jquery_jplayer_1").data("jPlayer").status.currentTime);
+		if ( event.which == 115 & !$('#jquery_jplayer_1').data().jPlayer.status.paused & word_index<lyrics_words.length) {
+            timing[jPlayer_c_time]=lyrics_words[word_index];
+            word_index+=1;
+			document.getElementById("demo").innerHTML = timing[jPlayer_c_time];
 		}
 
 	});
+
+    function submitLyrics() {
+        lyrics =document.getElementById("lyricsinput").value;
+        lyrics_words=lyrics.split(" ");
+        document.getElementById("lyrics").innerHTML = lyrics_words;
+
+    }
 
 
 </script>
