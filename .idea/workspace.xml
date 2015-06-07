@@ -2,10 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d77aca5a-216c-4c86-a864-592681f9b567" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test2.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test.html" afterPath="$PROJECT_DIR$/test.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/skin/pink.flag/image/jplayer.pink.flag.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/skin/pink.flag/image/jplayer.pink.flag.seeking.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/skin/pink.flag/image/jplayer.pink.flag.video.play.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/jquery.jplayer.swf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/skin/pink.flag/mustache/jplayer.pink.flag.audio.playlist.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/skin/pink.flag/mustache/jplayer.pink.flag.audio.single.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/skin/pink.flag/mustache/jplayer.pink.flag.audio.stream.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/skin/pink.flag/jplayer.pink.flag.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/skin/pink.flag/css/jplayer.pink.flag.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/skin/pink.flag/jplayer.pink.flag.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/skin/pink.flag/css/jplayer.pink.flag.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/skin/pink.flag/mustache/jplayer.pink.flag.video.playlist.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/skin/pink.flag/mustache/jplayer.pink.flag.video.single.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/jquery.jplayer.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/jquery.jplayer.min.js" />
     </list>
     <ignored path="karaoke.iws" />
     <ignored path=".idea/workspace.xml" />
