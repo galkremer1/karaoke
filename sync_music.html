@@ -26,10 +26,11 @@ Replace this text with your lyrics and press Submit.
     Current Line:
     <div id="lyrics_display"></div>
     <BR>
+
+	<BR>
     <div id="line1"></div>
     <div id="line2"></div>
-    <div id="line3"></div>
-    <div id="line4"></div>
+
 
 
 
@@ -38,6 +39,7 @@ Replace this text with your lyrics and press Submit.
 
 <script type="text/javascript" src="lib/jquery.min.js"></script>
 <script type="text/javascript" src="dist/jplayer/jquery.jplayer.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
 
 
 <script type="text/javascript">
@@ -108,76 +110,6 @@ $(document).ready(function(){
 
 </body>
 
-
-<script>
-
-	timing= {};
-    word_index=0;
-    display_index=0;
-	$(document).keypress(function( event ) {
-        jPlayer_c_time=Math.round($("#jquery_jplayer_1").data("jPlayer").status.currentTime);
-		if ( event.which == 115 & !$('#jquery_jplayer_1').data().jPlayer.status.paused & word_index<lyrics_words.length) {
-            timing[jPlayer_c_time]=lyrics_words[word_index];
-            word_index+=1;
-            if (word_index%4==0 & word_index>0)
-            {
-                display_index+=4;
-            }
-            document.getElementById("line1").innerHTML = lyrics_words[display_index];
-            document.getElementById("line2").innerHTML = lyrics_words[display_index+1];
-            document.getElementById("line3").innerHTML = lyrics_words[display_index+2];
-            document.getElementById("line4").innerHTML = lyrics_words[display_index+3];
-
-		}
-
-	});
-
-    function submitLyrics() {
-        lyrics_words = $('#lyricsinput').val().split("\n"); //Splitting the words into lines
-        lyrics_words = $.grep(lyrics_words,function(n){ return(n) }); //removing empty lines
-    //for testing purpose    document.getElementById("lyrics").innerHTML = lyrics_words;
-      //  document.getElementById('lyrics_display').innerHTML = lyrics_words[0];
-        document.getElementById("line1").innerHTML = lyrics_words[0];
-        document.getElementById("line2").innerHTML = lyrics_words[1];
-        document.getElementById("line3").innerHTML = lyrics_words[2];
-        document.getElementById("line4").innerHTML = lyrics_words[3];
-		lyricsDisplay();
-    }
-
-	function reloadplayer() {
-		youtubelink=document.getElementById("Youtube_link").value;
-		$("#jquery_jplayer_1").jPlayer("destroy");
-		$("#jquery_jplayer_1").jPlayer({
-			ready: function (event) {
-				$(this).jPlayer("setMedia", {
-					title: "Your song is playing",
-					mp3: "http://youtubeinmp3.com/fetch/?video="+youtubelink
-				});
-			},
-			swfPath: "../../dist/jplayer",
-			supplied: "mp3",
-			wmode: "window",
-			useStateClassSkin: true,
-			autoBlur: false,
-			smoothPlayBar: true,
-			keyEnabled: true,
-			remainingDuration: true,
-			toggleDuration: true
-		});
-	}
-
-	function lyricsDisplay() {
-
-		if (timing[Math.round($("#jquery_jplayer_1").data("jPlayer").status.currentTime)] !== undefined)
-		{
-			document.getElementById('lyrics_display').innerHTML = timing[Math.round($("#jquery_jplayer_1").data("jPlayer").status.currentTime)];;
-		}
-		var t = setTimeout(function(){lyricsDisplay()},1);
-
-	}
-
-
-</script>
 
 
 </html>
