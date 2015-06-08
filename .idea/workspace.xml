@@ -1,74 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d77aca5a-216c-4c86-a864-592681f9b567" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CHANGELOG.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CLA.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CONTRIBUTING.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Gruntfile.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/MIGRATION.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/composer.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/popcorn/popcorn.jplayer.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/popcorn/popcorn.jplayer.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/blue.monday/demo-01-android.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/blue.monday/demo-01-solution-flash-html.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/blue.monday/demo-01-supplied-mp3.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/blue.monday/demo-01-video-solution-flash-html.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/blue.monday/demo-01-video-supplied-m4v.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/blue.monday/demo-01-video-supplied-rtmpv.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/blue.monday/demo-01-video.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/blue.monday/demo-01.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/blue.monday/demo-02-jPlayerPlaylist.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/blue.monday/demo-02-media-solution-flash-html.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/blue.monday/demo-02-media.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/blue.monday/demo-02-multi.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/blue.monday/demo-02-video.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/blue.monday/demo-02.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/blue.monday/demo-03-together.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/blue.monday/demo-03-video.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/blue.monday/demo-03.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/blue.monday/demo-08.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/blue.monday/demo-09-popcorn-video-solution-flash-html.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/blue.monday/demo-09-popcorn-video.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/blue.monday/jPlayer-tester.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/blue.monday/sync_music.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/other/demo-04.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/other/demo-05.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/other/demo-07.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/pink.flag/demo-01-android.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/pink.flag/demo-01-solution-flash-html.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/pink.flag/demo-01-supplied-mp3.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/pink.flag/demo-01-video-solution-flash-html.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/pink.flag/demo-01-video-supplied-m4v.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/pink.flag/demo-01-video-supplied-rtmpv.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/pink.flag/demo-01-video.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/pink.flag/demo-01.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/pink.flag/demo-02-jPlayerPlaylist.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/pink.flag/demo-02-media-solution-flash-html.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/pink.flag/demo-02-media.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/pink.flag/demo-02-multi.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/pink.flag/demo-02-video.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/pink.flag/demo-02.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/pink.flag/demo-03-together.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/pink.flag/demo-03-video.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/pink.flag/demo-03.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/pink.flag/demo-08.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/pink.flag/demo-09-popcorn-video-solution-flash-html.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/pink.flag/demo-09-popcorn-video.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/examples/pink.flag/jPlayer-tester.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/popcorn.ie8.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/popcorn.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/popcorn.player.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/popcorn.subtitle.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test2.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test3.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/timing.html" afterPath="" />
-    </list>
+    <list default="true" id="d77aca5a-216c-4c86-a864-592681f9b567" name="Default" comment="" />
     <ignored path="karaoke.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -248,7 +181,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="58" width="1260" height="661" extended-state="0" />
+    <frame x="0" y="58" width="1260" height="661" extended-state="1" />
     <editor active="false" />
     <layout>
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
