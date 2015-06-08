@@ -2,30 +2,24 @@
 <html>
 <head>
     <script>
-        function lyricsDisplay() {
 
-            if (timing[Math.round($("#jquery_jplayer_1").data("jPlayer").status.currentTime)] !== undefined)
-            {
-                document.getElementById('lyrics_display').innerHTML = timing[Math.round($("#jquery_jplayer_1").data("jPlayer").status.currentTime)];;
-            }
-            var t = setTimeout(function(){lyricsDisplay()},400);
-
-        }
 
     </script>
 <meta charset="utf-8" />
 <title>Music sync</title>
-	<input type="text" id="Youtube_link" value="Enter youtube link here">
+	<div id="header">Karaoke machine</div>
 	<BR>
+	1. <input type="text" id="Youtube_link" value="Enter youtube link here">
 	<button onclick="reloadplayer()">Submit link</button>
 	<BR>
-    <textarea cols="40" rows="5" id="lyricsinput">
+    2. <textarea cols="40" rows="5" id="lyricsinput">
 Replace this text with your lyrics and press Submit.
 </textarea>
 	<BR>
-    <button onclick="submitLyrics()">Submit lyrics</button>
+	   <button onclick="submitLyrics()">Submit lyrics</button>
 	<BR>
-	After you have entered your lyrics press play and sync your music by pressing "s".
+	<BR>
+	3. After you have entered your lyrics and Youtube link press play and sync your music by pressing "s".
 	<BR>
     <p id="lyrics"></p>
     <p id="display"></p>
@@ -41,8 +35,11 @@ Replace this text with your lyrics and press Submit.
 
     <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 <link href="dist/skin/blue.monday/css/jplayer.blue.monday.min.css" rel="stylesheet" type="text/css" />
+
 <script type="text/javascript" src="lib/jquery.min.js"></script>
 <script type="text/javascript" src="dist/jplayer/jquery.jplayer.min.js"></script>
+
+
 <script type="text/javascript">
 		youtubelink=document.getElementById("Youtube_link").value;
 $(document).ready(function(){
@@ -68,7 +65,7 @@ $(document).ready(function(){
 </script>
 </head>
 
-<body onload="lyricsDisplay()">
+<body>
 
 <div id="jquery_jplayer_1" class="jp-jplayer"></div>
 <div id="jp_container_1" class="jp-audio" role="application" aria-label="media player">
@@ -139,11 +136,12 @@ $(document).ready(function(){
         lyrics_words = $('#lyricsinput').val().split("\n"); //Splitting the words into lines
         lyrics_words = $.grep(lyrics_words,function(n){ return(n) }); //removing empty lines
     //for testing purpose    document.getElementById("lyrics").innerHTML = lyrics_words;
-        document.getElementById('lyrics_display').innerHTML = lyrics_words[0];
+      //  document.getElementById('lyrics_display').innerHTML = lyrics_words[0];
         document.getElementById("line1").innerHTML = lyrics_words[0];
         document.getElementById("line2").innerHTML = lyrics_words[1];
         document.getElementById("line3").innerHTML = lyrics_words[2];
         document.getElementById("line4").innerHTML = lyrics_words[3];
+		lyricsDisplay();
     }
 
 	function reloadplayer() {
@@ -152,7 +150,7 @@ $(document).ready(function(){
 		$("#jquery_jplayer_1").jPlayer({
 			ready: function (event) {
 				$(this).jPlayer("setMedia", {
-					title: "What is love",
+					title: "Your song is playing",
 					mp3: "http://youtubeinmp3.com/fetch/?video="+youtubelink
 				});
 			},
@@ -166,6 +164,16 @@ $(document).ready(function(){
 			remainingDuration: true,
 			toggleDuration: true
 		});
+	}
+
+	function lyricsDisplay() {
+
+		if (timing[Math.round($("#jquery_jplayer_1").data("jPlayer").status.currentTime)] !== undefined)
+		{
+			document.getElementById('lyrics_display').innerHTML = timing[Math.round($("#jquery_jplayer_1").data("jPlayer").status.currentTime)];;
+		}
+		var t = setTimeout(function(){lyricsDisplay()},1);
+
 	}
 
 
