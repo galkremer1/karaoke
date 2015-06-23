@@ -3,14 +3,15 @@
 
 ## Overview
 
-This project uses `jPlayer` in order to display lyrics along
+This project is using jPlayer in order to display lyrics along 
 music played from Youtube.
 
 ## Installation
 
 ```sh
 # Clone this repository
-$ git clone https://github.com/galkremer1/karoke.git
+$ git clone https://github.com/galkremer1/cocktail_log.git
+
 
 # Head to the cloned library and open sync_music.html on your browser.
 ```
@@ -23,6 +24,7 @@ $ git clone https://github.com/galkremer1/karoke.git
 to be synced.
 5. When you are done syncing the lyrics, rewind the video.
 6. The synced lyrics will be displayed along the video.
+
 
 ## License
 
